@@ -1,14 +1,16 @@
 
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 
 def index(request):
-    return HttpResponse("<h1>Welcome to our Home Page</h1>")
+    return render(request, "home.html")
 
 
 def about(request):
-    return HttpResponse('<h1> Welcome to our about page.... </h1>')
+    return render(request, "about.html")
 
 
 def contact(request):
-    return HttpResponse('<h1> Welcome to our contact page.... </h1>')
+    pass
