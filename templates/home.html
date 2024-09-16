@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>This is home page</h1>
+{% extends "base.html" %}
 
-    <p>
-        We are learning django....
-    </p>
-</body>
-</html>
+
+{% block content %}
+<div class="card">
+    <h5 class="card-header">Welcome to Home page</h5>
+    <div class="card-body">
+      <h5 class="card-title">This is our first application</h5>
+      <p class="card-text">This is University Management System</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+{% endblock content %}

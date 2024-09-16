@@ -9,7 +9,25 @@ def index(request):
 
 
 def about(request):
-    return render(request, "about.html")
+    student_list = [
+        {
+            "name": "Jawad",
+            "roll": "0011"
+        },
+         {
+            "name": "Umaima",
+            "roll": "0012"
+        },
+         {
+            "name": "Shumaila",
+            "roll": "0013"
+        }
+    ]
+    return render(request, "about.html", 
+                  
+                  {'data': student_list}
+                  
+                  )
 
 
 def contact(request):
